@@ -1,0 +1,17 @@
+<template>
+    <lightning-card>
+        <!-- Custom title-->
+        <div class="custom-title slds-text-align_center">
+       
+            <!--<lightning-icon icon-name='utility:adduser' alternative-text='adduser' size='large' title='adduser'></lightning-icon>-->
+            <lightning-icon icon-name='custom:custom103' alternative-text='custom103' size='large' title='custom103' class="icon-title"></lightning-icon>
+            Create New Lead
+        </div>
+        <lightning-record-form 
+        object-api-name={objectApiName} 
+        record-id={recordId}
+        fields={fields}
+        onsuccess={successHandler}>
+        </lightning-record-form>
+    </lightning-card>
+</template>

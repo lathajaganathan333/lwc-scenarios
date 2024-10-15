@@ -1,0 +1,16 @@
+:host {
+    display: block;
+    margin: 2px;
+   
+}
+.custom-title  {
+    color: #0070d2;
+    font-size: 1.25rem;
+    font-weight: bold;
+    
+}
+.icon-title{
+    margin-right: 0.5rem;
+    margin-left: 0.5rem;
+}
+
