@@ -1,0 +1,19 @@
+<template>
+    <lightning-card>
+        <!-- Custom title-->
+        <div class="custom-title slds-text-align_center">
+            <lightning-icon icon-name='standard:account' alternative-text='account' size='large' title='account' class="icon-title"></lightning-icon>
+            Create New Account
+        </div>
+        <lightning-record-edit-form
+        object-api-name={objectApiName}
+        onsuccess={successHandler}>
+        <lightning-input-field field-name={fields.nameField}></lightning-input-field>
+        <lightning-input-field field-name={fields.typeField}></lightning-input-field>
+        <lightning-input-field field-name={fields.phoneField}></lightning-input-field>
+        <lightning-input-field field-name={fields.industryField}></lightning-input-field>
+        <lightning-button class="slds-m-around_xx-small" label="Cancel" onclick={resetHandler}></lightning-button>
+        <lightning-button variant="brand" type="submit" class="slds-m-around_xx-small" label="Save"></lightning-button>
+    </lightning-record-edit-form>
+    </lightning-card> 
+</template>
